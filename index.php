@@ -1,797 +1,229 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
-<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha382-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg2Va+PmSTsz/K68vbdEjh2u" crossorigin="anonymous">
+   <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
-<!-- Optional theme -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha382-rHyoN1iRsVXV2nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-<link href="index.css" type="text/css" rel="stylesheet">
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha382-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+	
 
-<title>Document</title>
-</head>
-<body>
-  <div class="main">
-<form class="form-inline" method="POST" enctype="multipart/form-data">
-    <div class="col-lg-12 col-md-12">
-            <div  class="form-group col-lg-offset-10 col-md-offset-10">
-            <input style="margin: 10px 0; background: #fff; width: 100px; height: 1000x; outline: 2px solid #ccc; padding: 50px 5px;" type= "file" value="upload passport">
-            <p style="color: blue;">Upload Passport</p>
-            </div>
-            </div>
-<div class="form-group col-lg-6 col-md-6">
-<label for="n">Name</label>
-<input style="width: 100%;" type="text" class="form-control" id="n">
-</div>
-<div class="form-group col-lg-6 col-md-6">
-<label for="fn">FirstName:</label>
-<input style="width: 100%;" type="text" class="form-control" id="fn">
-</div>
-<div class="form-group col-lg-6 col-md-6">
-<label for="ln">LastName:</label>
-<input style="width: 100%;" type="text" class="form-control" id="ln">
-</div><br />
-<div class="form-group col-lg-6 col-md-6">
-<label for="txt">Address</label>
-<textarea style="width: 100%;" id="txt" class="form-control" rows="5"></textarea>
-</div> 
-<div class="form-group col-lg-6 col-md-6">
-<label for="phn">Phone Number:</label>
-<span class="form-group-addon"><i class="glyphicon glyphicon-phone"></i></span>
-<input style="width: 100%;" id="phn" type="number" class="form-control" name="phn" placeholder="PhoneNumber">
-</div>
-<div class="form-group col-lg-6 col-md-6">
-<label for="ln">Date Of Birth:</label>
-<input style="width: 100%;" type="date" class="form-control" id="ln" placeholder="DOB">
-</div>
-<div class="form-group col-lg-6 col-md-6">
-<label for="slct">Sex</label>
-<select style="width: 100%;" id="slct" class="form-control">
-<option value="Male">Male</option>
-<option value="Male">Female</option>
-<option value="Male">Prefer Not to Say</option>
-</select>
-</div>
-<div class="form-group col-lg-6 col-md-6">
-<label for="ln">Highest Educational Qualification</label>
-<input style="width: 100%;" type="text" class="form-control" id="ln" placeholder="">
-</div>
-<div class="form-group col-lg-6 col-md-6">
-<label for="ln">Profession</label>
-<input style="width: 100%;" type="text" class="form-control" id="ln" placeholder="">
-</div>
-<div class="form-group col-lg-6 col-md-6">
-<label for="txt">Name/Address of Employer(if less than three years, give name of previous employer</label>
-<textarea style="width: 100%;" id="txt" class="form-control" rows="5"></textarea>
-</div>
-<div class="form-group col-lg-6 col-md-6">
-<label for="ln">Present Position</label>
-<input style="width: 100%;" type="text" class="form-control" id="ln" placeholder="">
-</div>
-<div class="form-group col-lg-6 col-md-6">
-<label for="phn">Telephone Number:</label>
-<span class="form-group-addon"><i class="glyphicon glyphicon-phone"></i></span>
-<input style="width: 100%;" id="phn" type="number" class="form-control" name="phn" placeholder="PhoneNumber">
-</div>
-<div class="form-group col-lg-6 col-md-6">
-<label for="phn"> Mobile Phone Number:</label>
-<span class="form-group-addon"><i class="glyphicon glyphicon-phone"></i></span>
-<input style="width: 100%;" id="phn" type="number" class="form-control" name="phn" placeholder="PhoneNumber">
-</div>
-<div class="form-group col-lg-6 col-md-6">
-<label for="phn">Fax</label>
-<span class="form-group-addon"><i class="glyphicon glyphicon-phone"></i></span>
-<input style="width: 100%;" id="phn" type="number" class="form-control" name="phn" placeholder="PhoneNumber">
-</div>
-<div class="form-group col-lg-6 col-md-6">
-<label for="phn">E-mail</label>
+    <title>Cover Template for Bootstrap</title>
 
-<input style="width: 100%;" id="em" type="email" class="form-control" name="phn" placeholder="PhoneNumber">
-</div>
-<div class="form-group col-lg-6 col-md-6">
-<label for="phn">Years at current Employment</label>
+    <!-- Bootstrap core CSS -->
+  
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
 
-<input style="width: 100%;" id="em" type="number" class="form-control" name="phn" >
-</div>
-<div class="form-group col-lg-6 col-md-6">
-<label for="phn">Number of Years to Retirement</label>
+   <script src="jquery.js"></script>
+	 <!-- Custom styles for this template -->
+    <link href="label.css" rel="stylesheet">
+  </head>
+   
 
-<input style="width: 100%;" id="em" type="number" class="form-control" name="phn" >
-</div>
+  <body>
 
-<div class="form-group col-lg-6 col-md-6">
-<label for="phn">Years at current Employment</label>
+<style>
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
 
-<input style="width: 100%;" id="em" type="number" class="form-control" name="phn" >
-</div>
-<div class="form-group col-lg-6 col-md-6">
-<label for="txt">Resedential Address</label>
-<textarea style="width: 100%;" id="txt" class="form-control" rows="5"></textarea>
-</div>
-<div class="form-group col-lg-6 col-md-6">
-<label for="phn">Telephone Number</label>
+body {
+  background-color: #f1f1f1;
+}
 
-<input style="width: 100%;" id="em" type="number" class="form-control" name="phn" >
-</div><br><br>
+#regForm {
+  background-color: #ffffff;
+  margin: 100px auto;
+  font-family: Raleway;
+  padding: 40px;
+  width: 80%;
+  min-width: 300px;
+}
 
-<div class="form-group col-lg-12 col-md-12">  
-<strong><p style="float: left; margin-top: 10px" for="phn">Type:</p></strong> <br> <br>
+h1 {
+  text-align: center;  
+}
 
-<div class="form-group  col-lg-4 col-md-4">
-<label for="phn">Owned</label>
-<input id="em" type="checkbox" class="form-control" name="phn" >
-</div>
-<div class="form-group col-lg-4 col-md-4">
-<label for="phn">Rented</label>
+input {
+  padding: 10px;
+  width: 100%;
+  font-size: 17px;
+  font-family: Raleway;
+  border: 1px solid #aaaaaa;
+}
 
-<input id="em" type="checkbox" class="form-control" name="phn" >
-</div>
-<div class="form-group  col-md-4 col-lg-4">
-<label for="phn">Others</label>
-<input id="em" type="checkbox" class="form-control" name="phn" >
-</div>
-</div>
-<hr>
-<div class="form-group col-lg-6 col-md-6">
-<label for="phn">Specify</label>
+/* Mark input boxes that gets an error on validation: */
+input.invalid {
+  background-color: #ffdddd;
+}
 
-<input style="width: 100%;" id="em" type="text" class="form-control" name="phn" >
-</div>
-<div class="form-group col-lg-6 col-md-6">
-<label for="phn">Annual Rent</label>
+/* Hide all steps by default: */
+.tab {
+  display: none;
+}
 
-<input style="width: 100%;" id="em" type="text" class="form-control" name="phn" >
-</div>
-<hr>
-<div class="form-group col-lg-12 col-md-12">
-<p>Marital Status:</p>                          
+button {
+  background-color: #4CAF50;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 17px;
+  font-family: Raleway;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+#prevBtn {
+  background-color: #bbbbbb;
+}
+
+/* Make circles that indicate the steps of the form: */
+.step {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbbbbb;
+  border: none;  
+  border-radius: 50%;
+  display: inline-block;
+  opacity: 0.5;
+}
+
+.step.active {
+  opacity: 1;
+}
+
+/* Mark the steps that are finished and valid: */
+.step.finish {
+  background-color: #4CAF50;
+}
+iframe {
+width: 100%;
+height: 500px;
+}
+ #list{
+  margin-top: 100px;
+  z-index: 1000;
+display: table;
+position: fixed;
+}
+</style>
+
+<form id="regForm">
+  <button class="btn-md btn-primary p-3">Corporate Account</button>
+  <button class="btn-md btn-primary p-3">FBN Mortgage</button>
+  <button class="btn-md btn-primary p-3">Individual Account</button>
+  <!-- One "tab" for each step in the form: -->
+  <div class="tab">
+  <iframe style="overflow: none; border: none;" frameborder="0" src="FM.php"></iframe>
+  </div>
+  <div class="tab">
+ <iframe style="overflow: none; border: none;" frameborder="0" src="CA.html"></iframe>
+ </div>
  
-<div class="form-group col-lg-4 col-md-4">
-<label for="phn">Married</label>
+  <div class="tab">
+  
+    <iframe style="overflow: none; border: none;" src="IA.php" frameborder="0" ></iframe>
+  </div>
+  <div style="overflow:auto;">
+    <div>
+      <button class="col-sm-offset-2 col-sm-5" type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+      <button class="col-sm-5" type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+    </div>
+  </div>
+  <!-- Circles which indicates the steps of the form: -->
+  <div style="text-align:center;margin-top:40px;">
+    <span class="step"></span>
+    <span class="step"></span>
+    <span class="step"></span>
+  </div><br>
+  </form>
+
+<script>
+var currentTab = 0; // Current tab is set to be the first tab (0)
+showTab(currentTab); // Display the crurrent tab
+
+function showTab(n) {
+  // This function will display the specified tab of the form...
+  var x = document.getElementsByClassName("tab");
+  x[n].style.display = "block";
+  //... and fix the Previous/Next buttons:
+  if (n == 0) {
+    document.getElementById("prevBtn").style.display = "none";
+  } else {
+    document.getElementById("prevBtn").style.display = "inline";
+  }
+  if (n == (x.length - 1)) {
+    document.getElementById("nextBtn").innerHTML = "Submit";
+  } else {
+    document.getElementById("nextBtn").innerHTML = "Next";
+  }
+  //... and run a function that will display the correct step indicator:
+  fixStepIndicator(n)
+}
+
+function nextPrev(n) {
+  // This function will figure out which tab to display
+  var x = document.getElementsByClassName("tab");
+  // Exit the function if any field in the current tab is invalid:
+  if (n == 1 && !validateForm()) return false;
+  // Hide the current tab:
+  x[currentTab].style.display = "none";
+  // Increase or decrease the current tab by 1:
+  currentTab = currentTab + n;
+  // if you have reached the end of the form...
+  if (currentTab >= x.length) {
+    // ... the form gets submitted:
+    document.getElementById("regForm").submit();
+    return false;
+  }
+  // Otherwise, display the correct tab:
+  showTab(currentTab);
+}
+
+function validateForm() {
+  // This function deals with validation of the form fields
+  var x, y, i, valid = true;
+  x = document.getElementsByClassName("tab");
+  y = x[currentTab].getElementsByTagName("input");
+  // A loop that checks every input field in the current tab:
+  for (i = 0; i < y.length; i++) {
+    // If a field is empty...
+    if (y[i].value == "") {
+      // add an "invalid" class to the field:
+      y[i].className += " invalid";
+      // and set the current valid status to false
+      valid = false;
+    }
+  }
+  // If the valid status is true, mark the step as finished and valid:
+  if (valid) {
+    document.getElementsByClassName("step")[currentTab].className += " finish";
+  }
+  return valid; // return the valid status
+}
+
+function fixStepIndicator(n) {
+  // This function removes the "active" class of all steps...
+  var i, x = document.getElementsByClassName("step");
+  for (i = 0; i < x.length; i++) {
+    x[i].className = x[i].className.replace(" active", "");
+  }
+  //... and adds the "active" class on the current step:
+  x[n].className += " active";
+}
+</script>
 
-<input id="em" type="checkbox" class="form-control" name="phn" >
-</div>
-
-<div class="form-group col-lg-4 col-md-4">
-<label for="phn">Single</label>
-
-<input id="em" type="checkbox" class="form-control" name="phn" >
-</div>
-<div class="form-group col-lg-4 col-md-4">
-<label for="phn">Divorced/Seperated</label>
-
-<input id="em" type="checkbox" class="form-control" name="phn" >
-</div>
-</div>
-<hr>
-<div class="form-group col-lg-6 col-md-6">
-<label for="phn">Name of Spouse</label>
-
-<input style="width: 100%;" id="em" type="text" class="form-control" name="phn" >
-</div>
-<div class="form-group col-lg-6 col-md-6">
-<label for="txt"> Address</label>
-<textarea style="width: 100%;" id="txt" class="form-control" rows="5"></textarea>
-
-</div>
-<div class="form-group col-lg-6 col-md-6">
-<label for="phn"> Spouse's Employer</label>
-
-<input style="width: 100%;" id="em" type="text" class="form-control" name="phn" >
-</div>
-<div class="form-group col-lg-6 col-md-6">
-<label for="phn">Number of Years Employed</label>
-
-<input style="width: 100%;" id="em" type="text" class="form-control" name="phn" >
-</div>
-<div class="form-group col-lg-6 col-md-6">
-<label for="phn">Profesion of Spouse</label>
-
-<input style="width: 100%;" id="em" type="text" class="form-control" name="phn" >
-</div>
-<div class="form-group col-lg-6 col-md-6">
-<label for="phn"> Spouse Annual Income</label>
-
-<input style="width: 100%;" id="em" type="text" class="form-control" name="phn" >
-</div>
-<div style="padding: 20px;" class="table-responsive">          
-<table class="table table-bordered">
-<thead>
-<tr>
-<th>Name</th>
-<th>Age</th>
-<th>Relationship</th>
-
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><textarea name="" id="" style="outline: none; border: none; width: 100%;resize: none;" rows="2"></textarea></td>
-<td><textarea name="" id="" style="outline: none; border: none; width: 100%;resize: none;" rows="2"></textarea></td>
-<td><textarea name="" id="" style="outline: none; border: none; width: 100%;resize: none;" rows="2"></textarea></td>
-
-</tr>
-<tr>
-<td><textarea name="" id="" style="outline: none; border: none; width: 100%;resize: none;" rows="2"></textarea></td>
-<td><textarea name="" id="" style="outline: none; border: none; width: 100%;resize: none;" rows="2"></textarea></td>
-<td><textarea name="" id="" style="outline: none; border: none; width: 100%;resize: none;" rows="2"></textarea></td>
-
-</tr>
-<tr>
-<td><textarea name="" id="" style="outline: none; border: none; width: 100%;resize: none;" rows="2"></textarea></td>
-<td><textarea name="" id="" style="outline: none; border: none; width: 100%;resize: none;" rows="2"></textarea></td>
-<td><textarea name="" id="" style="outline: none; border: none; width: 100%;resize: none;" rows="2"></textarea></td>
-
-</tr>
-<tr>
-<td><textarea name="" id="" style="outline: none; border: none; width: 100%;resize: none;" rows="2"></textarea></td>
-<td><textarea name="" id="" style="outline: none; border: none; width: 100%;resize: none;" rows="2"></textarea></td>
-<td><textarea name="" id="" style="outline: none; border: none; width: 100%;resize: none;" rows="2"></textarea></td>
-
-</tr>
-<tr>
-<td><textarea name="" id="" style="outline: none; border: none; width: 100%;resize: none;" rows="2"></textarea></td>
-<td><textarea name="" id="" style="outline: none; border: none; width: 100%;resize: none;" rows="2"></textarea></td>
-<td><textarea name="" id="" style="outline: none; border: none; width: 100%;resize: none;" rows="2"></textarea></td>
-
-</tr>
-
-</tbody>
-</table>
-</div>
-<h3 for="n">Next-of-Kin</h3>
-<div class="form-group col-lg-6">
-<label for="n">Name</label>
-<input style="width: 100%;" type="text" class="form-control" id="n">
-</div>
-<div class="form-group col-lg-6">
-<label for="fn">Relationship:</label>
-<input style="width: 100%;" type="text" class="form-control" id="fn">
-</div>
-<div class="form-group col-lg-12">
-<label for="ln">Age:</label>
-<input style="width: 100%;" style="margin: 10px 0; width: 100%;" type="number" class="form-control" id="ln">
-</div><br>
-<div style="margin: 10px 0; resize: none; width: 100%;" class="form-group">
-<label for="ln">Address:</label>
-<textarea rows="10" style="margin: 10px 0; resize: none; width: 100%;" type="text" class="form-control" id="ln"></textarea>
-</div>
-<br>
-<strong>SECTION B. PERSONAL FINALCIAL INFORMATION </strong><br>
-<div class="form-group">
-<label for="n">Employment Income</label> <br>
-<div class="form-group col-lg-6 col-md-6">
-<label for="n">Total Annual Pay:</label>
-<input style="width: 100%;" type="text" class="form-control" id="n">
-</div>
-<div class="form-group col-lg-6 col-md-6">
-<label for="fn">Monthly Gross Pay</label>
-<input style="width: 100%;" type="text" class="form-control" id="fn">
-</div>
-<div class="form-group col-lg-6 col-md-6">
-<label for="ln">Monthly Net Pay:</label>
-<input style="width: 100%;" type="text" class="form-control" id="ln">
-</div>
-
-</div>
-<div>
-<div style="padding: 20px;">
-<p> Other Periodic Pay ffrom employment:</p>
-<div class="table-responsive">          
-<table class="table table-bordered">
-<thead>
-<tr>
-<th>Type</th>
-<th>Amount(Naira)</th>
-<th>Month</th>
-
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><textarea name="" id="" style="outline: none; border: none; width: 100%;resize: none;" rows="1"></textarea></td>
-<td><textarea name="" id="" style="outline: none; border: none; width: 100%;resize: none;" rows="1"></textarea></td>
-<td><textarea name="" id="" style="outline: none; border: none; width: 100%;resize: none;" rows="1"></textarea></td>
-
-</tr>
-<tr>
-<td><textarea name="" id="" style="outline: none; border: none; width: 100%;resize: none;" rows="1"></textarea></td>
-<td><textarea name="" id="" style="outline: none; border: none; width: 100%;resize: none;" rows="1"></textarea></td>
-<td><textarea name="" id="" style="outline: none; border: none; width: 100%;resize: none;" rows="1"></textarea></td>
-
-</tr>
-<tr>
-<td><textarea name="" id="" style="outline: none; border: none; width: 100%;resize: none;" rows="1"></textarea></td>
-<td><textarea name="" id="" style="outline: none; border: none; width: 100%;resize: none;" rows="1"></textarea></td>
-<td><textarea name="" id="" style="outline: none; border: none; width: 100%;resize: none;" rows="1"></textarea></td>
-
-</tr>
-<tr>
-<td><textarea name="" id="" style="outline: none; border: none; width: 100%;resize: none;" rows="1"></textarea></td>
-<td><textarea name="" id="" style="outline: none; border: none; width: 100%;resize: none;" rows="1"></textarea></td>
-<td><textarea name="" id="" style="outline: none; border: none; width: 100%;resize: none;" rows="2"></textarea></td>
-
-</tr>
-<tr>
-<td><textarea name="" id="" style="outline: none; border: none; width: 100%;resize: none;" rows="1"></textarea></td>
-<td><textarea name="" id="" style="outline: none; border: none; width: 100%;resize: none;" rows="1"></textarea></td>
-<td><textarea name="" id="" style="outline: none; border: none; width: 100%;resize: none;" rows="1"></textarea></td>
-
-</tr>
-<tr>
-<td>  Total</td>
-<td><textarea name="" id="" style="outline: none; border: none; width: 100%;resize: none;" rows="1"></textarea></td>
-<td><textarea name="" id="" style="outline: none; border: none; width: 100%;resize: none;" rows="1"></textarea></td>
-
-</tr>
-
-</tbody>
-</table>
-</div>
-</div>
-<div style="padding: 20px;">
-<p> Other Source(s) of Income</p>
-<div  class="table-responsive">          
-<table class="table table-bordered">
-<thead>
-<tr>
-<th>Source</th>
-<th>Amount/Year(N)</th>
-
-
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><textarea name="" id="" style="outline: none; border: none; width: 100%;resize: none;" rows="1"></textarea></td>
-<td><textarea name="" id="" style="outline: none; border: none; width: 100%;resize: none;" rows="1"></textarea></td>
-
-</tr>
-<tr>
-<td><textarea name="" id="" style="outline: none; border: none; width: 100%;resize: none;" rows="1"></textarea></td>
-<td><textarea name="" id="" style="outline: none; border: none; width: 100%;resize: none;" rows="1"></textarea></td>
-</tr>
-<tr>
-<td><textarea name="" id="" style="outline: none; border: none; width: 100%;resize: none;" rows="1"></textarea></td>
-<td><textarea name="" id="" style="outline: none; border: none; width: 100%;resize: none;" rows="1"></textarea></td>
-</tr>
-<tr>
-<td><textarea name="" id="" style="outline: none; border: none; width: 100%;resize: none;" rows="1"></textarea></td>
-<td><textarea name="" id="" style="outline: none; border: none; width: 100%;resize: none;" rows="1"></textarea></td>
-</tr>
-<tr>
-<td><textarea name="" id="" style="outline: none; border: none; width: 100%;resize: none;" rows="1"></textarea></td>
-<td><textarea name="" id="" style="outline: none; border: none; width: 100%;resize: none;" rows="1"></textarea></td>
-</tr>
-<tr>
-<td>  Total</td>
-<td><textarea name="" id="" style="outline: none; border: none; width: 100%;resize: none;" rows="1"></textarea></td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-<div style="padding: 20px;">
-<p> Assets/ Investments Owed <i>(Real Estate, Equities, Bonds, Vehicles, etc):</i></p>
-<div  class="table-responsive">          
-<table class="table table-bordered">
-<thead>
-<tr>
-<th>Type</th>
-<th>Amount(Naira)</th>
-<th>Month</th>
-
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><textarea name="" id="" style="outline: none; border: none; width: 100%;resize: none;" rows="1"></textarea></td>
-<td><textarea name="" id="" style="outline: none; border: none; width: 100%;resize: none;" rows="1"></textarea></td>
-<td><textarea name="" id="" style="outline: none; border: none; width: 100%;resize: none;" rows="1"></textarea></td>
-
-</tr>
-<tr>
-<td><textarea name="" id="" style="outline: none; border: none; width: 100%;resize: none;" rows="1"></textarea></td>
-<td><textarea name="" id="" style="outline: none; border: none; width: 100%;resize: none;" rows="1"></textarea></td>
-<td><textarea name="" id="" style="outline: none; border: none; width: 100%;resize: none;" rows="1"></textarea></td>
-
-</tr>
-<tr>
-<td><textarea name="" id="" style="outline: none; border: none; width: 100%;resize: none;" rows="1"></textarea></td>
-<td><textarea name="" id="" style="outline: none; border: none; width: 100%;resize: none;" rows="1"></textarea></td>
-<td><textarea name="" id="" style="outline: none; border: none; width: 100%;resize: none;" rows="1"></textarea></td>
-
-</tr>
-<tr>
-<td><textarea name="" id="" style="outline: none; border: none; width: 100%;resize: none;" rows="1"></textarea></td>
-<td><textarea name="" id="" style="outline: none; border: none; width: 100%;resize: none;" rows="1"></textarea></td>
-<td><textarea name="" id="" style="outline: none; border: none; width: 100%;resize: none;" rows="2"></textarea></td>
-
-</tr>
-<tr>
-<td><textarea name="" id="" style="outline: none; border: none; width: 100%;resize: none;" rows="1"></textarea></td>
-<td><textarea name="" id="" style="outline: none; border: none; width: 100%;resize: none;" rows="1"></textarea></td>
-<td><textarea name="" id="" style="outline: none; border: none; width: 100%;resize: none;" rows="1"></textarea></td>
-
-</tr>
-<tr>
-<td>  Total</td>
-<td><textarea name="" id="" style="outline: none; border: none; width: 100%;resize: none;" rows="1"></textarea></td>
-<td><textarea name="" id="" style="outline: none; border: none; width: 100%;resize: none;" rows="1"></textarea></td>
-
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-<div style="padding: 20px;">
-<p> Existing Obligations/Liabilities <i>(off payroll only)</i></p>
-<div class="table-responsive">          
-<table class="table table-bordered">
-<thead>
-<tr>
-<th>Lender</th>
-<th>Type</th>
-<th>Outstanding Amount</th>
-<th>Existing Periodic Repaymet</th>
-<th>Frequency</th>
-
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><textarea name="" id="" style="outline: none; border: none; width: 100%;resize: none;" rows="1"></textarea></td>
-<td><textarea name="" id="" style="outline: none; border: none; width: 100%;resize: none;" rows="1"></textarea></td>
-<td><textarea name="" id="" style="outline: none; border: none; width: 100%;resize: none;" rows="1"></textarea></td>
-<td><textarea name="" id="" style="outline: none; border: none; width: 100%;resize: none;" rows="1"></textarea></td>
-<td><textarea name="" id="" style="outline: none; border: none; width: 100%;resize: none;" rows="1"></textarea></td>
-
-
-</tr>
-<tr>
-<td><textarea name="" id="" style="outline: none; border: none; width: 100%;resize: none;" rows="1"></textarea></td>
-<td><textarea name="" id="" style="outline: none; border: none; width: 100%;resize: none;" rows="1"></textarea></td>
-<td><textarea name="" id="" style="outline: none; border: none; width: 100%;resize: none;" rows="1"></textarea></td>
-<td><textarea name="" id="" style="outline: none; border: none; width: 100%;resize: none;" rows="1"></textarea></td>
-<td><textarea name="" id="" style="outline: none; border: none; width: 100%;resize: none;" rows="1"></textarea></td>
-
-
-</tr>
-<tr>
-<td><textarea name="" id="" style="outline: none; border: none; width: 100%;resize: none;" rows="1"></textarea></td>
-<td><textarea name="" id="" style="outline: none; border: none; width: 100%;resize: none;" rows="1"></textarea></td>
-<td><textarea name="" id="" style="outline: none; border: none; width: 100%;resize: none;" rows="1"></textarea></td>
-<td><textarea name="" id="" style="outline: none; border: none; width: 100%;resize: none;" rows="1"></textarea></td>
-<td><textarea name="" id="" style="outline: none; border: none; width: 100%;resize: none;" rows="1"></textarea></td>
-
-
-</tr>
-<tr>
-<td><textarea name="" id="" style="outline: none; border: none; width: 100%;resize: none;" rows="1"></textarea></td>
-<td><textarea name="" id="" style="outline: none; border: none; width: 100%;resize: none;" rows="1"></textarea></td>
-<td><textarea name="" id="" style="outline: none; border: none; width: 100%;resize: none;" rows="1"></textarea></td>
-<td><textarea name="" id="" style="outline: none; border: none; width: 100%;resize: none;" rows="1"></textarea></td>
-<td><textarea name="" id="" style="outline: none; border: none; width: 100%;resize: none;" rows="1"></textarea></td>
-
-
-</tr>
-<tr>
-<td><textarea name="" id="" style="outline: none; border: none; width: 100%;resize: none;" rows="1"></textarea></td>
-<td><textarea name="" id="" style="outline: none; border: none; width: 100%;resize: none;" rows="1"></textarea></td>
-<td><textarea name="" id="" style="outline: none; border: none; width: 100%;resize: none;" rows="1"></textarea>></td>
-<td><textarea name="" id="" style="outline: none; border: none; width: 100%;resize: none;" rows="1"></textarea></td>
-<td><textarea name="" id="" style="outline: none; border: none; width: 100%;resize: none;" rows="1"></textarea></td>
-
-
-</tr>
-<tr>
-<td>  Total</td>
-<td><textarea name="" id="" style="outline: none; border: none; width: 100%;resize: none;" rows="1"></textarea></td>
-<td><textarea name="" id="" style="outline: none; border: none; width: 100%;resize: none;" rows="1"></textarea></td>
-<td><textarea name="" id="" style="outline: none; border: none; width: 100%;resize: none;" rows="1"></textarea></td>
-<td><textarea name="" id="" style="outline: none; border: none; width: 100%;resize: none;" rows="1"></textarea></td>
-
-
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-<div style="padding: 20px;">
-<p> Banking Details (Account Information) </p>
-<div class="table-responsive">          
-<table class="table table-bordered">
-<thead>
-<tr>
-<th>Bank</th>
-<th>Account No.</th>
-<th>Account Type</th>
-<th> Balance As At</th>
-
-
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><textarea name="" id="" style="outline: none; border: none; width: 100%;resize: none;" rows="1"></textarea></td>
-<td><textarea name="" id="" style="outline: none; border: none; width: 100%;resize: none;" rows="1"></textarea></td>
-<td><textarea name="" id="" style="outline: none; border: none; width: 100%;resize: none;" rows="1"></textarea></td>
-<td><textarea name="" id="" style="outline: none; border: none; width: 100%;resize: none;" rows="1"></textarea></td>
-
-
-
-</tr>
-<tr>
-<td><textarea name="" id="" style="outline: none; border: none; width: 100%;resize: none;" rows="1"></textarea></td>
-<td><textarea name="" id="" style="outline: none; border: none; width: 100%;resize: none;" rows="1"></textarea></td>
-<td><textarea name="" id="" style="outline: none; border: none; width: 100%;resize: none;" rows="1"></textarea></td>
-<td><textarea name="" id="" style="outline: none; border: none; width: 100%;resize: none;" rows="1"></textarea></td>
-
-
-</tr>
-<tr>
-<td><textarea name="" id="" style="outline: none; border: none; width: 100%;resize: none;" rows="1"></textarea></td>
-<td><textarea name="" id="" style="outline: none; border: none; width: 100%;resize: none;" rows="1"></textarea></td>
-<td><textarea name="" id="" style="outline: none; border: none; width: 100%;resize: none;" rows="1"></textarea></td>
-<td><textarea name="" id="" style="outline: none; border: none; width: 100%;resize: none;" rows="1"></textarea></td>
-
-
-
-</tr>
-<tr>
-<td><textarea name="" id="" style="outline: none; border: none; width: 100%;resize: none;" rows="1"></textarea></td>
-<td><textarea name="" id="" style="outline: none; border: none; width: 100%;resize: none;" rows="1"></textarea></td>
-<td><textarea name="" id="" style="outline: none; border: none; width: 100%;resize: none;" rows="1"></textarea></td>
-<td><textarea name="" id="" style="outline: none; border: none; width: 100%;resize: none;" rows="1"></textarea></td>
-
-
-
-</tr>
-<tr>
-<td><textarea name="" id="" style="outline: none; border: none; width: 100%;resize: none;" rows="1"></textarea></td>
-<td><textarea name="" id="" style="outline: none; border: none; width: 100%;resize: none;" rows="1"></textarea></td>
-<td><textarea name="" id="" style="outline: none; border: none; width: 100%;resize: none;" rows="1"></textarea></td>
-<td><textarea name="" id="" style="outline: none; border: none; width: 100%;resize: none;" rows="1"></textarea></td>
-
-
-
-</tr>
-<tr>
-<td>  Total</td>
-<td><textarea name="" id="" style="outline: none; border: none; width: 100%;resize: none;" rows="1"></textarea></td>
-<td><textarea name="" id="" style="outline: none; border: none; width: 100%;resize: none;" rows="1"></textarea></td>
-<td><textarea name="" id="" style="outline: none; border: none; width: 100%;resize: none;" rows="1"></textarea></td>
-
-
-
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-
-<div class="form-group">
-<label for="phn">Estimated Monthly Living Expenses </label>
-<input style="width: 100%;" id="em" type="amount" class="form-control" name="phn" >
-</div
-><br><hr> <section>
-<strong> SECTION C. PARTICULARS OF THE LOAN: </strong><br>
-<div class="form-group col-lg-6">
-<label for="phn">Total Financing Required </label>
-<input style="width: 100%;" id="em" type="amount" class="form-control" name="phn" >
-</div>
-<div class="form-group col-lg-6">
-<label for="phn">Proposed Equity Contribution </label>
-<input style="width: 100%;" id="em" type="amount" class="form-control" name="phn" >
-</div>
-<div class="form-group col-lg-6">
-<label for="phn">Loan Amount Required </label>
-<input style="width: 100%;" id="em" type="amount" class="form-control" name="phn" >
-</div> 
-<div class="form-group col-lg-6">
-<label for="phn">Tenor of Facility</label>
-<input style="width: 100%;" id="em" type="amount" class="form-control" name="phn" >
-</div> 
-<div class="form-group col-lg-12">
-<label for="phn">Frequency of installment Repayment </label>
-<input style="width: 100%;"  id="em" type="amount" class="form-control" name="phn" >
-</div> 
-<br><br>
-<div style="padding: 20px;">
-<p> Proposes Security for the Loan </p>
-<div class="table-responsive">          
-<table class="table table-bordered">
-<thead>
-<tr>
-<th>Assest Type</th>
-<th>Type of Charged</th>
-<th>Valuation</th>
-
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><textarea name="" id="" style="outline: none; border: none; width: 100%;resize: none;" rows="1"></textarea></td>
-<td><textarea name="" id="" style="outline: none; border: none; width: 100%;resize: none;" rows="1"></textarea></td>
-<td><textarea name="" id="" style="outline: none; border: none; width: 100%;resize: none;" rows="1"></textarea></td>
-</tr>
-<tr>
-<td><textarea name="" id="" style="outline: none; border: none; width: 100%;resize: none;" rows="1"></textarea></td>
-<td><textarea name="" id="" style="outline: none; border: none; width: 100%;resize: none;" rows="1"></textarea></td>
-<td><textarea name="" id="" style="outline: none; border: none; width: 100%;resize: none;" rows="1"></textarea></td>
-</tr>
-<tr>
-<td><textarea name="" id="" style="outline: none; border: none; width: 100%;resize: none;" rows="1"></textarea></td>
-<td><textarea name="" id="" style="outline: none; border: none; width: 100%;resize: none;" rows="1"></textarea></td>
-<td><textarea name="" id="" style="outline: none; border: none; width: 100%;resize: none;" rows="1"></textarea></td>
-</tr>
-<tr>
-<td><textarea name="" id="" style="outline: none; border: none; width: 100%;resize: none;" rows="1"></textarea></td>
-<td><textarea name="" id="" style="outline: none; border: none; width: 100%;resize: none;" rows="1"></textarea></td>
-<td><textarea name="" id="" style="outline: none; border: none; width: 100%;resize: none;" rows="1"></textarea></td>
-</tr>
-<tr>
-<td><textarea name="" id="" style="outline: none; border: none; width: 100%;resize: none;" rows="1"></textarea></td>
-<td><textarea name="" id="" style="outline: none; border: none; width: 100%;resize: none;" rows="1"></textarea></td>
-<td><textarea name="" id="" style="outline: none; border: none; width: 100%;resize: none;" rows="1"></textarea></td>
-
-</tr>
-<tr>
-<td>  Total</td>
-<td><textarea name="" id="" style="outline: none; border: none; width: 100%;resize: none;" rows="1"></textarea></td>
-<td><textarea name="" id="" style="outline: none; border: none; width: 100%;resize: none;" rows="1"></textarea></td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-<div class="form-group col-lg-6">
-
-<input id="em" type="checkbox" class="form-control" name="phn" value="Guarantee of Employer" > Guarantee of Employer
-</div> 
-<div class="form-group col-lg-6">
-
-<input id="em" type="checkbox" class="form-control" name="phn" value="Other Guarantee" > Other Guarantee
-<input style="width: 100%;" id="em" type="text" class="form-control" name="phn"  >
-</div>
-</section> 
-<br><hr><section>
-<strong> SECTION E. APPLICANT'S DECLARATION </strong>
-<p> i hereby declare that all information provided in this application are correct and that all documents submitted with this form are authetic. I agree that FBN mortgages could cross-check thae information provided above and may request for references from my employer and/or financial institutions mentioned above. I therefore agree that any material misstatement discovered renders my application null and void</p><br >
-<div class="form-group col-lg-6">
-<label for="dt">Full Name</label>
-<input id="em" type="text" class="form-control" name="phn" placeholder="Full Name" >
-</div> 
-
-<div class="form-group col-lg-6">
-<label for="dt">Date</label>
-<input id="em" type="date" class="form-control" name="phn" placeholder="Date" >
-</div> 
-</section>
-<br><hr>
-<section>
-<strong>CHECKLIST OF REQUREMENT</strong>
-<div style="padding: 20px;">
-<u> MORTGAGE LOAN </u>
-<div class="table-responsive">          
-<table class="table table-bordered">
-<thead>
-<tr>
-<th></th>
-<th>Yes</th>
-<th>Deferred</th>
-<th>Walved</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>A letter of request for the facility</td>
-<td> <input type="checkbox" ></td>
-<td><input type="checkbox" ></td>
-<td><input type="checkbox" ></td>
-
-
-
-</tr>
-<tr>
-<td>A daily completed Home Ownership Mortgage Loan application form</td>
-<td> <input type="checkbox" ></td>
-<td><input type="checkbox" ></td>
-<td><input type="checkbox" ></td>
-
-
-</tr>
-<tr>
-<td>Copy of the title documents to the property(ownership must be in the name<br> of the vendor)</td>
-<td> <input type="checkbox" ></td>
-<td><input type="checkbox" ></td>
-<td><input type="checkbox" ></td>
-
-
-
-
-</tr>
-<tr>
-<td>Copy of the approved building plan</td>
-<td> <input type="checkbox" ></td>
-<td><input type="checkbox" ></td>
-<td><input type="checkbox" ></td>
-
-
-
-</tr>
-<tr>
-<td>Valuation report (including rental valuation if the property will be let)<br> on the property prepared by a register estate surveyor</td>
-<td> <input type="checkbox" ></td>
-<td><input type="checkbox" ></td>
-<td><input type="checkbox" ></td>
-
-
-
-</tr>
-<tr>
-<td>A copy of the applicant's Tax Clearance Certificate for 3 years</td>
-<td> <input type="checkbox" ></td>
-<td><input type="checkbox" ></td>
-<td><input type="checkbox" ></td>
-</tr>
-<tr>
-<td>Evidence of employment (for employees) and proof of employment<br> and other personal income (personal bank Statements and pay slips for 12 months)</td>
-<td> <input type="checkbox" ></td>
-<td><input type="checkbox" ></td>
-<td><input type="checkbox" ></td>
-</tr>
-<tr>
-<td>If self employed, the following are needed:<br>
-<ul>
-<li> Company Profile</li>
-<li>Company Bank Account Statement</li>
-<li> 3 years audited accounts for the company</li>
-</ul></td>
-<td> <input type="checkbox" ></td>
-<td><input type="checkbox" ></td>
-<td><input type="checkbox" ></td>
-</tr>
-<tr>
-<td>Security is a legal Mortgage on the property being financed</td>
-<td> <input type="checkbox" ></td>
-<td><input type="checkbox" ></td>
-<td><input type="checkbox" ></td>
-</tr>
-<tr>
-<td>Deposit of non refundable fees for:
-<ul>
-<li>Valuation report fee</li>
-<li>Legal Searches fee</li>
-<li>Processing fee</li>
-</ul>
-</td>
-<td> <input type="checkbox" ></td>
-<td><input type="checkbox" ></td>
-<td><input type="checkbox" ></td>
-</tr>
-<tr>
-<td>Deposit of cost of Legal documentation</td>
-<td> <input type="checkbox" ></td>
-<td><input type="checkbox" ></td>
-<td><input type="checkbox" ></td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-</section>
-<section>
-    <footer>
-        <p style="text-align: center;"> Copyright &copy; 2018. Do not Use without Approval. All rights reserved. A product of <a href="#">Witt Technologies</a></p>
-    </footer>
-</section>
-</form>
-</div>
 </body>
 </html>

@@ -7,12 +7,10 @@ body {
     background: #fff;
    
 }
-.main {
-    outline: 1px solid blue;
-}
+
 textarea, input {
     resize: none;
     margin: 10px 0;
-  
+    width: 100%;
     
 }
